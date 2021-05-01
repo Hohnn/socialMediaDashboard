@@ -5,6 +5,17 @@ body {
   font-size: 14px;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.pattern {
+  position: absolute;
+  width: 100%;
+  height: 20em;
+  border-radius: 0 0 30px 30px;
+  background-color: #1f212e;
+  z-index: -1;
 }
 
 .myGrey {
@@ -34,6 +45,8 @@ body {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   z-index: 100;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
 .switch .toggle:hover::after {
@@ -45,6 +58,7 @@ body {
   width: 100%;
   border-radius: 0.3em;
   overflow: hidden;
+  min-width: 250px;
 }
 
 .cardBig .myCard .groupe .bando {
@@ -83,5 +97,68 @@ body {
 
 .redText {
   color: #dc414c !important;
+}
+
+.miniGroupe {
+  background-color: #252a41;
+  width: 100%;
+  border-radius: 0.3em;
+  padding: 2em 2em 1em 2em;
+  min-width: 170px;
+}
+
+.miniGroupe:hover {
+  background-color: #394165;
+}
+
+.myGreen {
+  color: #1db489;
+}
+
+.light {
+  background-color: white;
+  color: #1e202a;
+}
+
+.light .pattern {
+  background-color: #f5f7ff;
+}
+
+.light .groupe {
+  background-color: #f0f2fa !important;
+}
+
+.light .groupe:hover {
+  background-color: #e1e4ef !important;
+}
+
+.light .myGrey {
+  color: #63687e;
+}
+
+.light .miniGroupe {
+  background-color: #f0f2fa !important;
+}
+
+.light .miniGroupe:hover {
+  background-color: #e1e4ef !important;
+}
+
+.light .toggle {
+  background: #aeb3cb !important;
+}
+
+.light .toggle:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82)) !important;
+  background: linear-gradient(90deg, #378fe6, #3eda82) !important;
+}
+
+.light .toggle::after {
+  background-color: #f5f7ff;
+  left: 37px;
+}
+
+.light .switch {
+  color: #63687e;
 }
 /*# sourceMappingURL=style.css.map */
